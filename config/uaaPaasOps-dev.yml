@@ -1,0 +1,20 @@
+server:
+  port: 80
+spring:
+  application:
+    name: uaaPaasOps
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discoveryPaasOps.dev-ops.vip/eureka/
+  instance: 
+  
+    #hostname: ${vcap.application.uris[0]}
+    #home-page-url: https://${eureka.instance.hostName}
+    #status-page-url: https://${eureka.instance.hostname}${management.context-path}/info
+    #health-check-url: https://${eureka.instance.hostname}${management.context-path}/health
+    
+    hostname: uaaPaasOps.dev-ops.vip
+    instance-id: uaaPaasOps.dev-ops.vip 
+    prefer-ip-address: false
+    nonSecurePort: 80 
